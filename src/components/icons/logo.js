@@ -20,6 +20,9 @@ const IconLogo = () => (
       </g>
     </g>
   </svg>
-);
+
+  // my logo
+)
 
 export default IconLogo;
+

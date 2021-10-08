@@ -3,6 +3,7 @@ const config = require('./src/config');
 module.exports = {
   siteMetadata: {
     title: 'Brittany Chiang',
+    author: `Adam Al-Rahman`,
     description:
       'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
     siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
@@ -30,6 +31,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("node-sass"),
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

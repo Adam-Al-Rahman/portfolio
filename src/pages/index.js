@@ -13,15 +13,22 @@ const IndexPage = ({ location }) => (
       <Hero />
       <About />
       <Jobs />
-      <Featured />
-      <Projects />
+      {/* <Featured />
+      <Projects /> */}
       <Contact />
     </StyledMainContainer>
   </Layout>
 );
 
+
+
 IndexPage.propTypes = {
+
   location: PropTypes.object.isRequired,
+
 };
 
+
+
 export default IndexPage;
+

@@ -65,6 +65,13 @@ const StyledCredit = styled.div`
       height: 14px;
     }
   }
+
+  .bc{
+    text-decoration: underline 1px dotted var(--green);
+    &:hover{
+      color: #ccd6f6;
+    }
+  }
 `;
 
 const Footer = () => {
@@ -105,9 +112,11 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/bchiang7/v4">
-          <div>Designed &amp; Built by Brittany Chiang</div>
-
+        <a href="https://github.com/Adam-Al-Rahman/portfolio#readme">
+          <div>Designed by
+            <a href="https://brittanychiang.com/#about" className="bc">Brittany Chiang</a>
+            <span>&#9613; Built by Atiq Ur-Rehaman.</span>
+          </div>
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
               <span>

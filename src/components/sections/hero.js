@@ -5,7 +5,14 @@ import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
 
+import {Link} from "gatsby";
+
+import Typewriter from 'typewriter-effect';
+
+
 const StyledHeroSection = styled.section`
+  @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
@@ -28,6 +35,11 @@ const StyledHeroSection = styled.section`
     }
   }
 
+  .namex{
+    font-family: 'Ruslan Display', cursive;
+    color: #3523a9;
+  }
+
   h3 {
     margin-top: 10px;
     color: var(--slate);
@@ -45,9 +57,11 @@ const StyledHeroSection = styled.section`
   }
 `;
 
+
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
+
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -58,9 +72,20 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>
+    <Typewriter
+    options={{
+      strings: ['Hi, my name is ', 'MAOH <html>&#65306</html>'],
+      autoStart: true,
+      // loop: true,
+      pauseFor: 150000,
+      deleteSpeed: 250,
+      cursor: "&#9613",
+
+    }}
+  /></h1>;
+  const two = <h2 className="big-heading namex">Atiq Ur-Rehaman.</h2>;
+  const three = <h3 className="big-heading">I Love to Solve problems.</h3>;
   const four = (
     <>
       <p>
@@ -75,13 +100,14 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a
+    <Link
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
-    </a>
+      to="https://www.newline.co/courses/build-a-spotify-connected-app"
+      // target="_blank"
+      // rel="noreferrer"
+    >
+      Digital Garden
+    </Link>
   );
 
   const items = [one, two, three, four, five];
