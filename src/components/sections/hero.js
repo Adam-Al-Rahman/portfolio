@@ -5,10 +5,12 @@ import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
 
-import {Link} from "gatsby";
-
+import { Link } from 'gatsby';
 import Typewriter from 'typewriter-effect';
 
+//tooltip
+import tippy from 'tippy.js';
+import 'tippy.js/dist/tippy.css';
 
 const StyledHeroSection = styled.section`
   @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
@@ -55,13 +57,60 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
-`;
 
+  .blob {
+    background: black;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    transform: scale(1);
+    animation: pulse-black 2s infinite;
+  }
+
+  @keyframes pulse-black {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+  }
+
+  .terminal{
+    font-size: 4px;
+  }
+
+}
+`;
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
 
+  tippy('#blob', {
+    content: "I'm a Tippy tooltip!",
+    placement: 'right',
+    arrow: true,
+    animation: 'perspective',
+    theme: 'light',
+    trigger: 'focus',
+    interactive: true,
+    content: '<strong>Bolded <span style="color: aqua;">content</span></strong>',
+    allowHTML: true,
+    delay: [0, 800],
+    followCursor: true,
+  });
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -72,42 +121,49 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>
-    <Typewriter
-    options={{
-      strings: ['Hi, my name is ', 'MAOH <html>&#65306</html>'],
-      autoStart: true,
-      // loop: true,
-      pauseFor: 150000,
-      deleteSpeed: 250,
-      cursor: "&#9613",
-
-    }}
-  /></h1>;
+  const one = (
+    <h1>
+      <Typewriter
+        options={{
+          strings: ['Hi, my name is ', 'MAOH <html>&#65306</html>', 'Hi, my name is '],
+          autoStart: true,
+          // loop: true,
+          pauseFor: 300000,
+          deleteSpeed: 250,
+          cursor: '&#9613',
+        }}
+      />
+    </h1>
+  );
   const two = <h2 className="big-heading namex">Atiq Ur-Rehaman.</h2>;
-  const three = <h3 className="big-heading">I Love to Solve problems.</h3>;
+  const three = (
+    <h3 className="big-heading">
+      I Love to Solve problems.
+      {/* <div className="blob" id="blob"></div> */}
+    </h3>
+  );
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
+        I’m a student at UPES.
       </p>
     </>
   );
   const five = (
-    <Link
-      className="email-link"
-      to="https://www.newline.co/courses/build-a-spotify-connected-app"
-      // target="_blank"
-      // rel="noreferrer"
-    >
-      Digital Garden
-    </Link>
+    <>
+      <Link
+        className="email-link"
+        to="https://www.newline.co/courses/build-a-spotify-connected-app"
+        // target="_blank"
+        // rel="noreferrer"
+      >
+        Digital Garden
+      </Link>
+      {/* &nbsp;&nbsp;&#9613;
+      <Link className="email-link" id="terminal">
+        Terminal :
+      </Link> */}
+    </>
   );
 
   const items = [one, two, three, four, five];

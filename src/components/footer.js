@@ -52,7 +52,6 @@ const StyledCredit = styled.div`
 
   .github-stats {
     margin-top: 10px;
-
     & > span {
       display: inline-flex;
       align-items: center;
@@ -67,9 +66,9 @@ const StyledCredit = styled.div`
   }
 
   .bc{
-    text-decoration: underline 1px dotted var(--green);
     &:hover{
       color: #ccd6f6;
+      text-decoration: underline 1px dotted var(--green);
     }
   }
 `;
@@ -84,7 +83,7 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/bchiang7/v4')
+    fetch('https://github.com/Adam-Al-Rahman/portfolio')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
@@ -112,10 +111,10 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/Adam-Al-Rahman/portfolio#readme">
-          <div>Designed by
-            <a href="https://brittanychiang.com/#about" className="bc">Brittany Chiang</a>
-            <span>&#9613; Built by Atiq Ur-Rehaman.</span>
+        <a href="https://github.com/Adam-Al-Rahman/portfolio#readme" >
+          <div>Open source by
+            <a href="https://github.com/bchiang7/v4" className="bc" target="_blank" rel="noreferrer">Brittany Chiang</a>
+            <span>&#9613; Created by Atiq Ur-Rehaman.</span>
           </div>
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
