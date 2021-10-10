@@ -2,12 +2,13 @@ import React from 'react';
 
 const IconLoader = () => (
   <>
-  <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" >
     <title>Loader Logo</title>
     <g>
       <path
         stroke="currentColor"
         strokeWidth="5"
+        fill="#3523a960"
         strokeLinecap="round"
         strokeLinejoin="round"
         d="M 11, 5

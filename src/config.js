@@ -26,6 +26,10 @@ module.exports = {
 
   navLinks: [
     {
+      name:"Digital Garden",
+      url:"https://www.newline.co/courses/build-a-spotify-connected-app"
+    },
+    {
       name: 'About',
       url: '/#about',
     },

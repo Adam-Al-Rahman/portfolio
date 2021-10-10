@@ -5,6 +5,10 @@ import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
+//tooltip
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css'
+
 const StyledAboutSection = styled.section`
   max-width: 900px;
 
@@ -113,11 +117,50 @@ const StyledPic = styled.div`
       z-index: -1;
     }
   }
+
+  .intro{
+    font-family: var(--font-mono);
+    color : var(--green);
+  }
+`;
+
+const Trans = styled.div`
+  .defaultX{
+    font-family : var(--font-mono);
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .transcoder{
+  }
+
+}
 `;
 
 const About = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
+
+  const JSXContent = () => (
+    <Tippy
+      content={
+          <Trans>
+          <div className="transcoder">
+          <p className="defaultX" >
+            <p >TransCoder</p>
+            <a href="https://en.wikipedia.org/wiki/Lojban" target="_blank">Lojban</a> : coi, mi'e
+            <br></br>
+            English : Hello, my name is
+          </p>
+          </div>
+          </Trans>
+      }
+      interactive={true} interactiveBorder={20} delay={100}
+    >
+      <span className="intro">coi, mi'e</span>
+
+    </Tippy>
+  );
 
   useEffect(() => {
     if (prefersReducedMotion) {
@@ -127,7 +170,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['python', 'Tensorflow',  'C++', 'Keras', 'prolog', 'Docker', "git"];
+  const skills = ['python', 'Tensorflow',  'C++', 'Keras', 'prolog', 'Docker', "git", "django"];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -137,13 +180,12 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              <span>coi, mi'e</span> <span>Atiq</span> and I enjoy reading, researching &amp; creating things. My
+              <JSXContent /> <span>Atiq</span> and I enjoy reading, researching &amp; creating things. My
               interest in coding started, when I heard python in one of my physics videos.
             </p>
-
             <p>
               Fast-forward to today, and I’ve have the privilege to study in one of the well known college in India{' '}
-              <a href="https://www.upes.ac.in/about-us">UPES</a>{' '}located at dehradun.
+              <a href="https://www.upes.ac.in/about-us"><Tippy content="University of Petroleum and Energy Studies"><span>UPES</span></Tippy></a>{' '}located at dehradun.
             </p>
 
             <p>

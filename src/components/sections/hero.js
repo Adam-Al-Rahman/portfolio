@@ -8,10 +8,6 @@ import { usePrefersReducedMotion } from '@hooks';
 import { Link } from 'gatsby';
 import Typewriter from 'typewriter-effect';
 
-//tooltip
-import tippy from 'tippy.js';
-import 'tippy.js/dist/tippy.css';
-
 const StyledHeroSection = styled.section`
   @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
 
@@ -97,20 +93,6 @@ const StyledHeroSection = styled.section`
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
-
-  tippy('#blob', {
-    content: "I'm a Tippy tooltip!",
-    placement: 'right',
-    arrow: true,
-    animation: 'perspective',
-    theme: 'light',
-    trigger: 'focus',
-    interactive: true,
-    content: '<strong>Bolded <span style="color: aqua;">content</span></strong>',
-    allowHTML: true,
-    delay: [0, 800],
-    followCursor: true,
-  });
 
   useEffect(() => {
     if (prefersReducedMotion) {

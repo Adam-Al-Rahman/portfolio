@@ -4,8 +4,9 @@
 <h1 align="center">
   Adam Al-Rahman
 </h1>
+<p align="center">The Portfolio Website.</p>
 <p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  This project is the protfolio of minebuilt with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   Previous iterations:
@@ -73,7 +74,7 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
    npm run serve
    ```
 
-## 🎨 Color Reference
+## 🎨 Color Reference [in HEX]
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
