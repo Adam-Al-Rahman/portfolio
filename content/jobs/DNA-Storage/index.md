@@ -1,7 +1,7 @@
 ---
 date: ''
-title: 'DNA Storage'
-company: 'dnaS'
+title: 'DeoxyriboNucleic Acid Storage'
+company: 'DNA Storage'
 location: ''
 range: ''
 url: ''
