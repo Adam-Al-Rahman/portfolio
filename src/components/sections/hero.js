@@ -90,6 +90,7 @@ const StyledHeroSection = styled.section`
 }
 `;
 
+
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
