@@ -121,14 +121,14 @@ const Hero = () => {
   const two = <h2 className="big-heading namex">Atiq Ur-Rehaman.</h2>;
   const three = (
     <h3 className="big-heading">
-      I Love to Solve problems.
+      I solve problems.
       {/* <div className="blob" id="blob"></div> */}
     </h3>
   );
   const four = (
     <>
       <p>
-        I’m a student at UPES.
+        I’m a student at UPES. Currently pursuing bachelor's degree in computer science.
       </p>
     </>
   );
@@ -136,7 +136,7 @@ const Hero = () => {
     <>
       <Link
         className="email-link"
-        to="https://www.newline.co/courses/build-a-spotify-connected-app"
+        to="https://digital-gardenx.netlify.app/"
         // target="_blank"
         // rel="noreferrer"
       >
