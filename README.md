@@ -16,6 +16,12 @@
 
 ![demo](./src/images/demo.jpg)
 
+
+## Credit
+
+This is cloned from a open source by [Brittany Chiang](https://github.com/bchiang7/v4) | Created by Adam Al-Rahman.
+
+
 ## 🎨 Color Reference [in HEX]
 
 | Color          | Brittany Chiang                                                    | Adam Al-Rahman |
