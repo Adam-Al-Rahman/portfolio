@@ -13,5 +13,5 @@ url: 'https://www.microsoft.com/en-us/research/project/dna-storage/'
   - The answer is my friend, YES.
 - Theoretically we can save 1 Zetabytes of data per gram of DNA.
 - Currently we can only save 215 petabytes per gram.
-- Synthetic Dna is read using `DNA Sequenser`. And if any error occurs it is corrected by `Error-Correcting Code`.
-- Down side of Dna-Storage is that `Synthesizing Dnas` cost arround $3500/MB  (megabyte).
+- Synthetic Dna is read using `DNA Sequencer`. And if any error occurs it is corrected by `Error-Correcting Code`.
+- Down side of Dna-Storage is that `Synthesizing Dnas` cost around $3500/MB  (megabyte).
