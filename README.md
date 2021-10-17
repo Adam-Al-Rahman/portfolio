@@ -21,6 +21,32 @@
 
 This is cloned from a open source by [Brittany Chiang](https://github.com/bchiang7/v4) | Created by Adam Al-Rahman.
 
+## How this is done using gatsby
+
+### Install gatsby
+
+First we need to install gatsby. Assuming that you install node.
+
+```sh
+npm install -g gatsby
+```
+
+### Creating the project locally
+
+Using below command to create the gatsby starter project with Chiang's V4.
+
+```sh
+gatsby new project-name https://github.com/bchiang7/v4
+```
+
+once it done your are ready to run it locally by
+
+First time : `gatsby develop`
+
+Second onwards :  `npm run develop`
+
+You can see your site at : `http://localhost:8000`
+
 
 ## 🎨 Color Reference [in HEX]
 
