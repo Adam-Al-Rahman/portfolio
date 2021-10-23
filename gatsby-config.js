@@ -6,8 +6,8 @@ module.exports = {
     author: `Adam Al-Rahman`,
     description:
       'Atiq Ur-Rehaman is a student at UPES (University of Petroleum & Energy Studies) university.',
-    siteUrl: 'https://brittanychiang.com/',
-    image: '/og.png', // Path to your image you placed in the 'static' folder
+    siteUrl: 'https://atiq-ur-rehaman.netlify.app',
+    image: '/og.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@AdamAlRahman1',
   },
   plugins: [
@@ -158,4 +158,8 @@ module.exports = {
     },
   ],
 };
+
+
+
+
 
