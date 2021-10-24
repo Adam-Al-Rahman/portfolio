@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
+import curimg from "../../images/hoverCursor.svg"
 
 import { Link } from 'gatsby';
 import Typewriter from 'typewriter-effect';
@@ -52,6 +53,10 @@ const StyledHeroSection = styled.section`
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
+    cursor: none;
+    &:hover{
+      cursor: url(${curimg}), auto;
+    }
   }
 
   .blob {

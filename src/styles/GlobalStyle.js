@@ -3,14 +3,19 @@ import fonts from './fonts';
 import variables from './variables';
 import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
+import curimg from "../images/cursor.svg"
 
 const GlobalStyle = createGlobalStyle`
   ${fonts};
   ${variables};
+  &:hover{
+    cursor: url(${curimg}), auto;
+  };
 
   html {
     box-sizing: border-box;
     width: 100%;
+    cursor: url(${curimg}), auto;
   }
 
   *,

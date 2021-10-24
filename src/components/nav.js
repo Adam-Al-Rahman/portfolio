@@ -8,6 +8,8 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
+import curimg from "../images/hoverCursor.svg";
+import logoCur from "../images/logoCursor.svg";
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -76,7 +78,6 @@ const StyledNav = styled.nav`
           fill: var(--green-tint);
         }
       }
-
       svg {
         fill: none;
         transition: var(--transition);
@@ -124,6 +125,10 @@ const StyledLinks = styled.div`
     ${({ theme }) => theme.mixins.smallButton};
     margin-left: 15px;
     font-size: var(--fz-xs);
+    cursor: none;
+    &:hover{
+      cursor: url(${curimg}), auto;
+    }
   }
 `;
 
