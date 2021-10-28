@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
-import curimg from "../../images/hoverCursor.svg"
+import curimg from "../../images/hoverCursor.svg";
 
 import { Link } from 'gatsby';
 import Typewriter from 'typewriter-effect';
@@ -88,10 +88,6 @@ const StyledHeroSection = styled.section`
 
   }
 
-  .terminal{
-    font-size: 4px;
-  }
-
 }
 `;
 
@@ -147,9 +143,13 @@ const Hero = () => {
       >
         Digital Garden
       </Link>
-      {/* &nbsp;&nbsp;&#9613;
-      <Link className="email-link" id="terminal">
-        Terminal :
+      {/* <span>&nbsp;</span>
+      <Link
+        className="email-link"
+        id="terminal"
+        to="/terminal"
+      >
+        Terminal
       </Link> */}
     </>
   );
@@ -157,6 +157,7 @@ const Hero = () => {
   const items = [one, two, three, four, five];
 
   return (
+    <>
     <StyledHeroSection>
       {prefersReducedMotion ? (
         <>
@@ -175,6 +176,7 @@ const Hero = () => {
         </TransitionGroup>
       )}
     </StyledHeroSection>
+    </>
   );
 };
 
