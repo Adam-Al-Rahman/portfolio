@@ -181,7 +181,7 @@ const About = () => {
           <div>
             <p>
               <JSXContent /> <span>Atiq</span> and I enjoy reading, researching &amp; creating things. My
-              interest in coding started, when I heard python in one of my physics videos.
+              interest in coding started, when I heard python in one of a physics videos.
             </p>
             <p>
               Fast-forward to today, and I’ve the privilege to study in one of the well known college in India{' '}
