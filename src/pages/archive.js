@@ -10,6 +10,7 @@ import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledTableContainer = styled.div`
+
   margin: 100px -20px;
 
   @media (max-width: 768px) {
@@ -256,9 +257,6 @@ export const pageQuery = graphql`
             tech
             github
             external
-            ios
-            android
-            company
           }
           html
         }
