@@ -5,6 +5,8 @@ import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
 import curimg from "../images/cursor.svg"
 
+
+
 const GlobalStyle = createGlobalStyle`
   ${fonts};
   ${variables};

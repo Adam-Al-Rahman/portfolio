@@ -11,7 +11,6 @@ import Typewriter from 'typewriter-effect';
 
 const StyledHeroSection = styled.section`
   @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
-
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
@@ -37,6 +36,8 @@ const StyledHeroSection = styled.section`
   .namex{
     font-family: 'Ruslan Display', cursive;
     color: #3523a9;
+    margin: 0;
+    font-size: clamp(40px, 8vw, 80px);
   }
 
   h3 {
@@ -119,7 +120,7 @@ const Hero = () => {
       />
     </h1>
   );
-  const two = <h2 className="big-heading namex">Atiq Ur-Rehaman.</h2>;
+  const two = <h2 className="namex">Atiq Ur-Rehaman.</h2>;
   const three = (
     <h3 className="big-heading">
       I solve problems.
