@@ -9,7 +9,7 @@ import curimg from "../../images/hoverCursor.svg";
 import { Link } from 'gatsby';
 import Typewriter from 'typewriter-effect';
 
-const StyledHeroSection = styled.section`
+export const StyledHeroSection = styled.section`
   @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
