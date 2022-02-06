@@ -114,7 +114,7 @@ const Footer = () => {
         <a href="https://github.com/Adam-Al-Rahman/portfolio#readme" >
           <div>Open source by
             <a href="https://github.com/bchiang7/v4" className="bc" target="_blank" rel="noreferrer">Brittany Chiang</a>
-            <span>&#9613; Created by Atiq Ur-Rehaman.</span>
+            <span>&#9613; Created by Adam Al-Rahman.</span>
           </div>
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
