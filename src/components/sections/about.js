@@ -144,16 +144,16 @@ const About = () => {
   const JSXContent = () => (
     <Tippy
       content={
-          <Trans>
+        <Trans>
           <div className="transcoder">
-          <p className="defaultX" >
-            <p >TransCoder</p>
-            <a href="https://en.wikipedia.org/wiki/Lojban" target="_blank">Lojban</a> : coi, mi'e
-            <br></br>
+            <p className="defaultX" >
+              <p >TransCoder</p>
+              <a href="https://en.wikipedia.org/wiki/Lojban" target="_blank" rel="noreferrer">Lojban</a> : coi, mi'e
+              <br></br>
             English : Hello, my name is
-          </p>
+            </p>
           </div>
-          </Trans>
+        </Trans>
       }
       interactive={true} interactiveBorder={20} delay={100}
     >
@@ -170,7 +170,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Tensorflow',  'C++', 'Keras', 'Prolog', "Qiskit", 'Docker', "MongoDB" ,"Git", "django"];
+  const skills = ['Python', 'Tensorflow',  'C++', 'Keras', 'Prolog', "Qiskit", 'Docker', "MongoDB" ,"Git", "django", "Typescript", "graphql", "nextjs", "Tailwindcss", "mdx"];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>

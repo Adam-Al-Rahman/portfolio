@@ -2,32 +2,32 @@ import React from 'react';
 
 const IconLoader = () => (
   <>
-  <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" >
-    <title>Loader Logo</title>
-    <g>
-      <path
-        stroke="currentColor"
-        strokeWidth="5"
-        fill="#3523a960"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M 11, 5
+    <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" >
+      <title>Loader Logo</title>
+      <g>
+        <path
+          stroke="currentColor"
+          strokeWidth="5"
+          fill="#3523a960"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M 11, 5
                   L 11, 65
                   L 50, 95
                   L 89, 65
                   L 89, 5 z"
-      />
-    </g>
-  </svg>
-  <svg id="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
-    width="2100.000000pt" height="2100.000000pt" viewBox="0 0 2100.000000 2100.000000"
-    preserveAspectRatio="xMidYMid meet">
+        />
+      </g>
+    </svg>
+    <svg id="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
+      width="2100.000000pt" height="2100.000000pt" viewBox="0 0 2100.000000 2100.000000"
+      preserveAspectRatio="xMidYMid meet">
 
-    <title>Loader Logo</title>
-    <g>
-      <g id="B" transform="translate(0.000000,2100.000000) scale(0.100000,-0.100000)"
-        fill="#00aa00" stroke="none">
-        <path d="M16060 14230 c-185 -48 -375 -147 -825 -433 -593 -377 -1059 -705
+      <title>Loader Logo</title>
+      <g>
+        <g id="B" transform="translate(0.000000,2100.000000) scale(0.100000,-0.100000)"
+          fill="#00aa00" stroke="none">
+          <path d="M16060 14230 c-185 -48 -375 -147 -825 -433 -593 -377 -1059 -705
         -1525 -1072 -327 -258 -816 -662 -834 -689 -9 -15 -22 -53 -28 -85 -21 -112
         34 -220 137 -267 53 -25 134 -32 179 -14 14 5 26 6 26 1 0 -5 -11 -96 -24
         -202 -14 -107 -36 -314 -50 -461 -83 -863 -258 -2092 -540 -3793 -93 -558
@@ -47,7 +47,7 @@ const IconLoader = () => (
         -198 -309 -441 -777 -1159 -1211 -1860 -320 -517 -405 -653 -420 -668 -9 -10
         -13 64 -18 346 -12 643 -58 1257 -100 1339 -23 43 -66 93 -100 113 l-28 17 48
         29 c137 80 672 337 1068 512 141 62 893 380 903 382 2 0 0 -6 -4 -12z"/>
-        <path d="M9130 12229 c-40 -12 -147 -119 -215 -214 -53 -73 -149 -269 -238
+          <path d="M9130 12229 c-40 -12 -147 -119 -215 -214 -53 -73 -149 -269 -238
         -485 -100 -242 -507 -1320 -634 -1680 -284 -806 -444 -1270 -693 -2010 l-267
         -795 -204 -83 c-839 -342 -1359 -561 -2064 -870 -225 -98 -428 -185 -450 -192
         -121 -39 -265 -136 -297 -200 -24 -47 -23 -143 1 -195 53 -115 196 -161 312
@@ -70,10 +70,10 @@ const IconLoader = () => (
         -532 -205 -730 -282 -198 -77 -370 -144 -382 -149 -19 -7 -21 -6 -13 19 4 15
         240 772 523 1682 284 910 555 1783 604 1939 l88 284 8 -129 c4 -71 16 -257 27
         -414z"/>
+        </g>
       </g>
-  </g>
 
-  </svg>
+    </svg>
   </>
 );
 
