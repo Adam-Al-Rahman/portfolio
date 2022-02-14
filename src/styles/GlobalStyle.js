@@ -3,11 +3,10 @@ import fonts from './fonts';
 import variables from './variables';
 import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
-import curimg from "../images/cursor.svg"
-
-
+import curimg from '../images/cursor.svg';
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
   ${fonts};
   ${variables};
   &:hover{

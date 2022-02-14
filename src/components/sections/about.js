@@ -7,7 +7,7 @@ import { usePrefersReducedMotion } from '@hooks';
 
 //tooltip
 import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css'
+import 'tippy.js/dist/tippy.css';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;

@@ -4,13 +4,13 @@ import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
-import curimg from "../../images/hoverCursor.svg";
+import curimg from '../../images/hoverCursor.svg';
+import '../../fonts/Ruslay/RuslanDisplay-Regular.ttf';
 
 import { Link } from 'gatsby';
 import Typewriter from 'typewriter-effect';
 
 export const StyledHeroSection = styled.section`
-  @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
   ${({ theme }) => theme.mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
@@ -92,7 +92,6 @@ export const StyledHeroSection = styled.section`
 }
 `;
 
-
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -129,9 +128,7 @@ const Hero = () => {
   );
   const four = (
     <>
-      <p>
-        I’m a student at UPES. Currently pursuing bachelor's degree in computer science.
-      </p>
+      <p>I’m a student at UPES. Currently pursuing bachelor's degree in computer science.</p>
     </>
   );
   const five = (
@@ -159,24 +156,24 @@ const Hero = () => {
 
   return (
     <>
-    <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
+      <StyledHeroSection>
+        {prefersReducedMotion ? (
+          <>
+            {items.map((item, i) => (
+              <div key={i}>{item}</div>
             ))}
-        </TransitionGroup>
-      )}
-    </StyledHeroSection>
+          </>
+        ) : (
+          <TransitionGroup component={null}>
+            {isMounted &&
+              items.map((item, i) => (
+                <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+                  <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
+                </CSSTransition>
+              ))}
+          </TransitionGroup>
+        )}
+      </StyledHeroSection>
     </>
   );
 };
