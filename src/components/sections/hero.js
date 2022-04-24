@@ -122,7 +122,7 @@ const Hero = () => {
   const two = <h2 className="namex">Atiq Ur-Rehaman.</h2>;
   const three = (
     <h3 className="big-heading">
-      I solve problems.
+      I solve Quantum AI problems.
       {/* <div className="blob" id="blob"></div> */}
     </h3>
   );
