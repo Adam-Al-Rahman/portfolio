@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 // import { email } from '@config';
-import curimg from '../../images/hoverCursor.svg';
+import curimg from '../../images/cursor.svg';
 import '../../fonts/Ruslay/RuslanDisplay-Regular.ttf';
 
 import { Link } from 'gatsby';

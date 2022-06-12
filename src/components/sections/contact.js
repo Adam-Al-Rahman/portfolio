@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
-import curimg from "../../images/hoverCursor.svg"
+import curimg from '../../images/cursor.svg';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -40,7 +40,7 @@ const StyledContactSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
     cursor: none;
-    &:hover{
+    &:hover {
       cursor: url(${curimg}), auto;
     }
   }

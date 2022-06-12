@@ -8,8 +8,7 @@ import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
 import { IconLogo } from '@components/icons';
-import curimg from "../images/hoverCursor.svg";
-import logoCur from "../images/logoCursor.svg";
+import curimg from '../images/cursor.svg';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -19,7 +18,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: #0000050;//rgba(10, 25, 47, 0.85);
+  background-color: #0000050; //rgba(10, 25, 47, 0.85);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -35,17 +34,17 @@ const StyledHeader = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     ${props =>
-    props.scrollDirection === 'up' &&
+      props.scrollDirection === 'up' &&
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
-        background-color: #00000050;//rgba(10, 25, 47, 0.85);
+        background-color: #00000050; //rgba(10, 25, 47, 0.85);
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
 
     ${props =>
-    props.scrollDirection === 'down' &&
+      props.scrollDirection === 'down' &&
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
@@ -126,7 +125,7 @@ const StyledLinks = styled.div`
     margin-left: 15px;
     font-size: var(--fz-xs);
     cursor: none;
-    &:hover{
+    &:hover {
       cursor: url(${curimg}), auto;
     }
   }
