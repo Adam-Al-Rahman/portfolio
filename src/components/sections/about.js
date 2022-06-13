@@ -65,21 +65,24 @@ const StyledPic = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 50%;
     background-color: var(--green);
 
     &:hover,
     &:focus {
       background: transparent;
       outline: 0;
+      border-radius: 50%;
 
       &:after {
-        top: 15px;
-        left: 15px;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
       }
 
       .img {
         filter: none;
+        border-radius: 50%;
         mix-blend-mode: normal;
       }
     }
@@ -88,6 +91,7 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
+      border-radius: 50%;
       filter: grayscale(100%) contrast(1);
       transition: var(--transition);
     }
@@ -107,20 +111,22 @@ const StyledPic = styled.div`
       top: 0;
       left: 0;
       background-color: var(--navy);
+      box-shadow: 2px;
       mix-blend-mode: screen;
     }
 
     &:after {
       border: 2px solid var(--green);
-      top: 20px;
-      left: 20px;
+      border-radius: 50%;
+      top: 10px;
+      left: 10px;
       z-index: -1;
     }
   }
 
-  .intro{
+  .intro {
     font-family: var(--font-mono);
-    color : var(--green);
+    color: var(--green);
   }
 `;
 
@@ -146,19 +152,22 @@ const About = () => {
       content={
         <Trans>
           <div className="transcoder">
-            <p className="defaultX" >
-              <p >TransCoder</p>
-              <a href="https://en.wikipedia.org/wiki/Lojban" target="_blank" rel="noreferrer">Lojban</a> : coi, mi'e
+            <p className="defaultX">
+              <p>TransCoder</p>
+              <a href="https://en.wikipedia.org/wiki/Lojban" target="_blank" rel="noreferrer">
+                Lojban
+              </a>{' '}
+              : coi, mi'e
               <br></br>
-            English : Hello, my name is
+              English : Hello, my name is
             </p>
           </div>
         </Trans>
       }
-      interactive={true} interactiveBorder={20} delay={100}
-    >
+      interactive={true}
+      interactiveBorder={20}
+      delay={100}>
       <span className="intro">coi, mi'e</span>
-
     </Tippy>
   );
 
@@ -170,7 +179,20 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Tensorflow',  'C++', 'Keras', 'Prolog', "Qiskit", 'Docker', "MongoDB" ,"Git", "django", "Typescript", "graphql", "nextjs", "Tailwindcss", "mdx"];
+  const skills = [
+    'Python',
+    'Tensorflow',
+    'C++',
+    'Keras',
+    'Docker',
+    'MongoDB',
+    'Git',
+    'Typescript',
+    'GraphQl',
+    'Nextjs',
+    'Tailwindcss',
+    'mdx',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -180,17 +202,22 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              <JSXContent /> <span>Atiq</span> and I enjoy reading, researching &amp; creating things. My
-              interest in coding started, when I heard python in one of a physics videos.
+              <JSXContent /> <span>Atiq</span> and I enjoy reading, researching &amp; creating
+              things. My interest in coding started, when I heard python programming language in one
+              of a physics videos.
             </p>
             <p>
-              Fast-forward to today, and I’ve the privilege to study in one of the well known college in India{' '}
-              <a href="https://www.upes.ac.in/about-us"><Tippy content="University of Petroleum and Energy Studies"><span>UPES</span></Tippy></a>{' '}located at Dehradun.
+              Fast-forward to today, and I’ve the privilege to study in one of the well known
+              college in India{' '}
+              <a href="https://www.upes.ac.in/about-us">
+                <Tippy content="University of Petroleum and Energy Studies">
+                  <span>UPES</span>
+                </Tippy>
+              </a>{' '}
+              located at Dehradun.
             </p>
 
-            <p>
-              Right now, I'm pursuing my bachelor degree in computer science.
-            </p>
+            <p>Right now, I'm pursuing my bachelor degree in computer science.</p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
@@ -204,7 +231,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

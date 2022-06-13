@@ -5,7 +5,7 @@ module.exports = {
     title: 'Atiq Ur-Rehaman',
     author: `Adam Al-Rahman`,
     description:
-      'Atiq Ur-Rehaman is a student at UPES (University of Petroleum & Energy Studies) university.',
+      'Quantum Artificial Intelligence Enthusiast | Artificial Intelligence Student | Pythoneer | Rustacean.',
     siteUrl: 'https://atiq-ur-rehaman.netlify.app',
     image: '/og.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@AdamAlRahman1',
@@ -158,8 +158,3 @@ module.exports = {
     },
   ],
 };
-
-
-
-
-

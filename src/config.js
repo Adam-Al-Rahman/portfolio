@@ -6,28 +6,20 @@ module.exports = {
       name: 'GitHub',
       url: 'https://github.com/Adam-Al-Rahman',
     },
-    // {
-    //   name: 'Instagram',
-    //   url: 'https://www.instagram.com/bchiang7',
-    // },
+    {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/atiq-urrehaman',
+    },
     {
       name: 'Twitter',
       url: 'https://twitter.com/AdamAlRahman1',
     },
-    // {
-    //   name: 'Linkedin',
-    //   url: 'https://www.linkedin.com/in/bchiang7',
-    // },
-    // {
-    //   name: 'Codepen',
-    //   url: 'https://codepen.io/bchiang7',
-    // },
   ],
 
   navLinks: [
     {
-      name:"Digital Garden",
-      url:"https://digital-gardenx.netlify.app/"
+      name: 'Digital Garden',
+      url: 'https://digital-gardenx.netlify.app/',
     },
     {
       name: 'About',

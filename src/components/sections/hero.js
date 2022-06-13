@@ -37,7 +37,7 @@ export const StyledHeroSection = styled.section`
     font-family: 'Ruslan Display', cursive;
     color: #3523a9;
     margin: 0;
-    font-size: clamp(40px, 8vw, 80px);
+    font-size: clamp(30px, 8vw, 65px);
   }
 
   h3 {
@@ -109,9 +109,9 @@ const Hero = () => {
     <h1>
       <Typewriter
         options={{
-          strings: ['Hi, my name is ', 'MAOH <html>&#65306</html>', 'Hi, my name is '],
+          strings: ['Hi, my name is '],
           autoStart: true,
-          // loop: true,
+          loop: true,
           pauseFor: 300000,
           deleteSpeed: 250,
           cursor: '&#9613',
@@ -128,7 +128,10 @@ const Hero = () => {
   );
   const four = (
     <>
-      <p>I’m a student at UPES. Currently pursuing bachelor's degree in computer science.</p>
+      <p>
+        Quantum Artificial Intelligence Enthusiast {'&'} undergrad CSE student specialization in
+        Artificial Intelligence{' '}
+      </p>
     </>
   );
   const five = (
