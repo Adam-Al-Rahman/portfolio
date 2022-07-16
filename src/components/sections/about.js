@@ -192,6 +192,7 @@ const About = () => {
     'Nextjs',
     'Tailwindcss',
     'mdx',
+    'Rust-Lang',
   ];
 
   return (
