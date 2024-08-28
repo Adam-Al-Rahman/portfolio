@@ -17,20 +17,20 @@ module.exports = {
   ],
 
   navLinks: [
-    {
-      name: 'Digital Garden',
-      url: 'https://digital-gardenx.netlify.app/',
-    },
+    // {
+    //   name: 'Digital Garden',
+    //   url: 'https://digital-gardenx.netlify.app/',
+    // },
     {
       name: 'About',
       url: '/#about',
     },
     {
-      name: 'Interest',
+      name: 'Experience',
       url: '/#jobs',
     },
     {
-      name: 'Projects',
+      name: 'Work',
       url: '/#projects',
     },
     {

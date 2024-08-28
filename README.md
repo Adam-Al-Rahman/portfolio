@@ -16,7 +16,6 @@
 
 ![demo](./src/images/demo.jpg)
 
-
 ## Credit
 
 This is cloned from a open source by [Brittany Chiang](https://github.com/bchiang7/v4) | Created by Adam Al-Rahman.
@@ -43,10 +42,9 @@ once it done your are ready to run it locally by
 
 First time : `gatsby develop`
 
-Second onwards :  `npm run develop`
+Second onwards : `npm run develop`
 
 You can see your site at : `http://localhost:8000`
-
 
 ## 🎨 Color Reference [in HEX]
 

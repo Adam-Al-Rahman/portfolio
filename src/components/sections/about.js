@@ -192,7 +192,7 @@ const About = () => {
     'Nextjs',
     'Tailwindcss',
     'mdx',
-    'Rust-Lang',
+    'PostgreSQL',
   ];
 
   return (

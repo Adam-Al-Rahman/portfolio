@@ -34,7 +34,7 @@ const StyledHeader = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     ${props =>
-      props.scrollDirection === 'up' &&
+    props.scrollDirection === 'up' &&
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
@@ -44,7 +44,7 @@ const StyledHeader = styled.header`
       `};
 
     ${props =>
-      props.scrollDirection === 'down' &&
+    props.scrollDirection === 'down' &&
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);

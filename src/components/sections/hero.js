@@ -119,18 +119,18 @@ const Hero = () => {
       />
     </h1>
   );
-  const two = <h2 className="namex">Atiq Ur-Rehaman.</h2>;
+  const two = <h2 className="big-heading">Atiq Urrehaman.</h2>;
   const three = (
     <h3 className="big-heading">
-      I solve Quantum AI problems.
+      I build intelligent systems.
       {/* <div className="blob" id="blob"></div> */}
     </h3>
   );
   const four = (
     <>
       <p>
-        Quantum Artificial Intelligence Enthusiast {'&'} undergrad CSE student specialization in
-        Artificial Intelligence{' '}
+        Aspiring software engineer student focused on building accessible digital experiences
+        through software intelligent systems.{' '}
       </p>
     </>
   );
@@ -155,7 +155,8 @@ const Hero = () => {
     </>
   );
 
-  const items = [one, two, three, four, five];
+  // const items = [one, two, three, four, five];
+  const items = [one, two, three, four];
 
   return (
     <>

@@ -2,13 +2,13 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Atiq Ur-Rehaman',
+    title: 'Atiq Urrehaman',
     author: `Adam Al-Rahman`,
     description:
       'Quantum Artificial Intelligence Enthusiast | Artificial Intelligence Student | Pythoneer | Rustacean.',
     siteUrl: 'https://atiq-ur-rehaman.netlify.app',
-    image: '/og.jpg', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@AdamAlRahman1',
+    image: '/og.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@atiq_urrehaman',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,7 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Atiq Ur-Rehaman',
+        name: 'Atiq Urrehaman',
         short_name: 'Atiq',
         start_url: '/',
         background_color: config.colors.darkNavy,
