@@ -129,8 +129,8 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        Aspiring software engineer student focused on building accessible digital experiences
-        through software intelligent systems.{' '}
+        Dedicated software development and machine learning engineering student focused on creating
+        accessible digital experiences through innovative solutions and intelligent systems.{' '}
       </p>
     </>
   );

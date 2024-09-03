@@ -65,8 +65,8 @@ const StyledCredit = styled.div`
     }
   }
 
-  .bc{
-    &:hover{
+  .bc {
+    &:hover {
       color: #ccd6f6;
       text-decoration: underline 1px dotted var(--green);
     }
@@ -111,10 +111,17 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <a href="https://github.com/Adam-Al-Rahman/portfolio#readme" >
-          <div>Open source by
-            <a href="https://github.com/bchiang7/v4" className="bc" target="_blank" rel="noreferrer">Brittany Chiang</a>
-            <span>&#9613; Created by Adam Al-Rahman.</span>
+        <a href="https://github.com/Adam-Al-Rahman/portfolio#readme">
+          <div>
+            Open source by
+            <a
+              href="https://github.com/bchiang7/v4"
+              className="bc"
+              target="_blank"
+              rel="noreferrer">
+              Brittany Chiang
+            </a>
+            <span>&#9613; Created by Atiq Urrehaman.</span>
           </div>
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">

@@ -193,6 +193,7 @@ const About = () => {
     'Tailwindcss',
     'mdx',
     'PostgreSQL',
+    'Bazel',
   ];
 
   return (
