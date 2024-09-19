@@ -1,6 +1,6 @@
 ---
 date: '2024-06-01'
-title: 'IBM Phemsoft LSTM Model Data Preprocess'
+title: 'IBM Phemesoft LSTM Model Data Preprocess'
 github: 'https://huggingface.co/datasets/x-g85/x_g85_fn_dataset'
 external: ''
 tech:
@@ -8,7 +8,7 @@ tech:
   - NumPy
   - Pandas
   - Matplotlib
-company: 'IBM Phemsoft'
+company: 'IBM Phemesoft'
 showInProject: True
 ---
 

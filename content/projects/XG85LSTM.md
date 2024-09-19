@@ -1,6 +1,6 @@
 ---
 date: '2024-06-01'
-title: 'IBM Phemsoft LSTM Model'
+title: 'IBM Phemesoft LSTM Model'
 github: 'https://huggingface.co/x-g85/X_G85_LSTM'
 external: ''
 tech:
@@ -9,7 +9,7 @@ tech:
   - Matplotlib
   - NumPy
   - Pandas
-company: 'IBM Phemsoft'
+company: 'IBM Phemesoft'
 showInProject: false
 ---
 
