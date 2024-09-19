@@ -204,9 +204,9 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              <JSXContent /> <span>Atiq</span> and I enjoy reading, researching &amp; creating
-              things. My interest in coding started, when I heard python programming language in one
-              of a physics videos.
+              <JSXContent /> <span>Atiq</span>, and I am passionate about reading, researching, and
+              creating innovative solutions. My journey into coding began when I discovered the
+              Python programming language during a physics lecture.{' '}
             </p>
             <p>
               Fast-forward to today, and I’ve the privilege to study in one of the well known

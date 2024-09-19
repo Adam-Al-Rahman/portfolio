@@ -1,7 +1,7 @@
 ---
 date: '2024-06-01'
 title: 'Machine Learning Engineer'
-company: 'IBM Phemsoft'
+company: 'IBM Phemesoft'
 location: ''
 range: 'Jun 2024 — Jul 2024'
 url: 'https://huggingface.co/x-g85'
