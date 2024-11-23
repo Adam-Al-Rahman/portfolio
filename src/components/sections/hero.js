@@ -128,10 +128,7 @@ const Hero = () => {
   );
   const four = (
     <>
-      <p>
-        Dedicated software development and machine learning engineering student focused on creating
-        accessible digital experiences through innovative solutions and intelligent systems.{' '}
-      </p>
+      <p>Machine Learning & Software Development</p>
     </>
   );
   const five = (

@@ -4,10 +4,10 @@ title: 'Machine Learning Engineer'
 company: 'MAJOR I'
 location: ''
 range: 'AUG 2024 --- Present'
-url: ''
+url: 'https://github.com/Adam-Al-Rahman/SnowPetrelX'
 ---
 
 - UPES University Project
-- Designing a deep learning model to recognize various Snow Petrel bird actions, such as
-  preening and nesting, from video input (image frames) across a range of environmental
-  conditions
+- Build deep learning model to recognize Snow Petrel bird actions, such as preening and nesting, from video input (image frames) using Pytorch
+- Pose Estimation with resnet50 and custom convolutional head
+- Behavioral classification with Graph Convolutional Network (GCN) and Gated Recurrent Unit (GRU)
